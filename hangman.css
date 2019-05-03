@@ -1,0 +1,72 @@
+// The space that contains all the letters
+.hm__word {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+  margin: 8em 1em;
+}
+
+// The visible letters
+.hm__letter {
+  flex: 0 1 1.5em;
+  
+  padding: 0 0.75em;
+  margin: 0 0.25em 1em;
+  
+  font-size: 3rem;
+  text-align: center;
+  
+  border-bottom: 3px solid blue;
+}
+
+// Letters that haven't been guessed yet
+.hm__letter--hidden {
+  position: relative;
+  
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    
+    background-color: white;
+  }
+}
+
+// Both guessing button sections
+.hm__inputField {
+  display: flex;
+  // flex-wrap: wrap;
+  max-width: 46em;
+  margin-bottom: 2em;
+  
+  input {
+    flex: 1 1 auto;
+    display: inline-block;
+    margin: 0 1em;
+  }
+  
+  .btn {
+    flex: 0 1 auto;
+  }
+}
+
+
+// Styles for winning and losing the game
+.hm__gameWon {
+  
+  background-color: #3cec96;
+  
+  * { color: #24501e; }
+}
+
+
+.hm__gameLost {
+
+  background-color: #f2ebd3;
+  
+  * { color: red; }
+}

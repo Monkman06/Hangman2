@@ -1,0 +1,34 @@
+.container-fluid
+  .row
+    .col-xs-12
+      .hm__container
+        h1 Hangman game!
+        br
+        p Try to guess the hidden word below! You can guess either one letter at a time or the whole word.
+        p Guessing a letter wrong costs one guess, while guessing the whole word wrong costs you two guesses.
+        br
+        .row
+          .col-xs-12.hm__inputField
+            input.hm__letterInput
+            a.btn.btn-default.m-l-1.hm__guessLetter Guess a letter!
+        .row
+          .col-xs-12.hm__inputField
+            input.hm__wordInput
+            a.btn.btn-default.m-l-1.hm__guessWord Guess the word!
+        .row
+          .col-xs-12
+            h2.hm__gameEndMessage
+        .row
+          .col-xs-12
+            .hm__word
+        .row
+          .col-xs-12
+            h3.hm__hint
+        .row
+          .col-xs-12
+            h3 Guesses left: 
+              strong.hm__guesses
+
+              
+        
+        
